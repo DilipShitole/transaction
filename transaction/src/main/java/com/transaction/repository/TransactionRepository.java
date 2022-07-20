@@ -12,4 +12,5 @@ public interface TransactionRepository extends MongoRepository<TransactionModel,
 
 	Optional<List<TransactionModel>> getTransactionsByAccount(String account);
 
+
 }
