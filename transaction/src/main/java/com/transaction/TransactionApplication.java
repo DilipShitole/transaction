@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.mongodb.config.EnableMongoAuditing;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.web.client.RestTemplate;
 
 
@@ -17,5 +18,10 @@ public class TransactionApplication {
 	@Bean
 	public RestTemplate getResttemplateBean() {
 		return new RestTemplate();
+	}
+	
+	@Bean
+     public void testMessage() {
+		
 	}
 }
